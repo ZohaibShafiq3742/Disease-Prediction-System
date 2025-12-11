@@ -1,73 +1,54 @@
 🩺 Disease Prediction System (NLP + Machine Learning)
 
-This repository contains a semester project focused on predicting diseases from textual symptom descriptions using NLP, classical preprocessing, and multiple embedding-based machine learning models.
-The system also includes a fully functional GUI interface for real-time symptom input and disease prediction.
+This repository contains a semester project focused on predicting diseases from user-provided symptom descriptions using Natural Language Processing (NLP).
+Symptoms are analyzed using multiple embedding methods and machine learning models to generate accurate disease predictions.
 
 📘 Project Overview
-🎯 Objective
+Objective
 
-Build an intelligent system that predicts the most probable disease based on user-entered symptoms, using machine learning and biomedical language models.
+Predict probable diseases—based on raw textual symptom descriptions—by leveraging NLP and machine learning techniques on a medical symptom–disease dataset.
 
-🧩 Approach
+Approach
 
-The project pipeline integrates:
+The project applies:
 
-Robust data preprocessing
+Classical NLP preprocessing,
 
-Text normalization & cleaning
+Vectorization with domain-specific and general embeddings,
 
-Feature engineering
-
-Vectorization using:
-
-BioBERT embeddings
-
-Word2Vec
-
-FastText
-
-GloVe
-
-TF-IDF
-
-Multiple trained ML models including:
-
-Neural Networks
-
-Hybrid embeddings + dense layers
-
-The final system is deployed with an intuitive graphical interface to demonstrate real-time disease prediction.
+Neural network–based classification models
+to infer disease labels from symptom text.
 
 🧠 Models & Embeddings Implemented
-BioBERT-based Embeddings
+BioBERT-Based Embeddings
 
-Domain-specific biomedical language model.
+Biomedical variant of BERT trained on PubMed.
 
-Highly effective for capturing medical terminology.
+High-quality representations for medical terminology.
 
-Used as a powerful baseline for comparison.
+Integrated into the symptom-vectorization pipeline.
 
 Word2Vec
 
-Semantic word embedding.
+Learns semantic relationships between symptoms.
 
-Captures contextual relationships between symptoms.
+Provides dense numerical vectors for classification.
 
 FastText
 
-Subword-aware embedding.
+Handles misspellings and rare medical terms through subword modeling.
 
-Performs well with rare or misspelled symptoms.
+Produces robust embeddings for NLP tasks.
 
 GloVe
 
-Global co-occurrence approach.
+Embedding approach based on global co-occurrence.
 
-Lightweight and effective for structured symptom text.
+Lightweight and efficient for structured symptom data.
 
 Neural Network Classifier
 
-Used as a general baseline.
+Used to compare embedding effectiveness.
 
 Fully included in the repository.
 
@@ -75,24 +56,22 @@ Fully included in the repository.
 
 Predict diseases directly from raw symptom input.
 
-Multiple vectorization strategies for experimentation.
+Multiple embedding methods and model architectures available.
 
-Training metrics & model performance tracking.
+Training and evaluation notebooks included.
 
-A clean, functional GUI interface for real-time predictions.
+Interactive GUI interface for real-time disease prediction.
 
-Fully reproducible machine learning pipeline.
-
-Organized repository with executable code and demo video.
+Easily extendable to additional symptoms, diseases, or model variations.
 
 📁 Repository Contents
 File / Folder	Description
-notebooks/*.ipynb	Data preprocessing, vectorization, training, and analysis notebooks.
-models/	Trained models, encoders, vectorizers, and training history.
-data/	Dataset used for training (cleaned & raw versions).
-src/	Source code for preprocessing, training, and GUI prediction scripts.
-demo/	Screen recordings and screenshots of the working interface.
-metrics.json	Stored accuracy, loss, and performance metrics for models.
+*.ipynb	Notebooks for preprocessing, vectorization, training, and evaluation.
+models/	Trained models, encoders, vectorizers, and embedding files.
+data/	Dataset used for disease–symptom prediction.
+src/	Source scripts for preprocessing, training, and GUI inference.
+demo/	Screen recordings and GUI demonstration files.
+metrics.json	Training metrics and evaluation scores.
 requirements.txt	Python dependencies required for the project.
 🚀 Usage
 1. Clone the repository
@@ -102,30 +81,40 @@ cd Disease-Prediction-System
 2. Install dependencies
 pip install -r requirements.txt
 
-3. Run the GUI for disease prediction
+3. Run the GUI Application
+
+Launch the graphical interface to input symptoms and get predictions:
+
 python src/predict.py
 
-4. Run training or preprocessing
+4. Run notebooks
 
-Use the available Jupyter notebooks in the notebooks/ directory.
+Open the .ipynb files using Jupyter Notebook or Google Colab to explore:
 
-📊 Result Highlights
+Preprocessing
 
-Validation accuracy achieved: 98% – 100% across different embedding models.
+Vectorization
 
-BioBERT-based approaches showed fast convergence and stable performance.
+Model training
 
-Consistent reduction of loss across training epochs.
+Performance analysis
 
-All results and curves are stored and visualized in notebooks.
+🩻 Inference Example
+
+Enter symptoms such as:
+
+fever, headache, sore throat
+
+
+The system processes the text, vectorizes it, and predicts the most likely disease.
 
 🙌 Acknowledgements
 
-A special thank you to:
+Special thanks to:
 
-Dr. Tanzila Kehkashan — For insightful mentorship throughout the project.
+Dr. Tanzila Kehkashan — Project supervisor and mentor.
 
-Imran Ashraf (Senior) — For continuous technical guidance and support.
+Imran Ashraf — Senior advisor for technical guidance.
 
 📄 License
 
@@ -137,3 +126,4 @@ Zohaib Shafiq
 🔗 GitHub: https://github.com/ZohaibShafiq3742
 
 🔗 LinkedIn: https://www.linkedin.com/in/zohaib-shafiq-33547238a/
+](https://www.linkedin.com/in/zohaib-shafiq-33547238a/)
