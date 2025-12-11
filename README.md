@@ -126,4 +126,3 @@ Zohaib Shafiq
 🔗 GitHub: https://github.com/ZohaibShafiq3742
 
 🔗 LinkedIn: https://www.linkedin.com/in/zohaib-shafiq-33547238a/
-](https://www.linkedin.com/in/zohaib-shafiq-33547238a/)
