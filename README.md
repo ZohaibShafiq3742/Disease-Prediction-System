@@ -1,129 +1,139 @@
-🩺 Disease Prediction System
-Predicting diseases from symptoms using Machine Learning & NLP (BioBERT + Word2Vec + FastText + GloVe)
-🚀 Project Overview
-This project is an end-to-end Disease–Symptom Prediction System built using advanced NLP techniques and Machine Learning models.
-The system takes symptoms as input and predicts the most probable disease using trained classification models.
-The pipeline includes:
-Data Preprocessing
-Symptom Engineering
-Text Vectorization (BioBERT, Word2Vec, FastText, GloVe, TF-IDF)
-Model Training (Neural Networks & Classical ML Models)
-Evaluation & Visualization
-Graphical User Interface (GUI) for real-time predictions
-This project demonstrates practical application of ML/NLP in the healthcare domain.
-📂 Repository Structure
-Disease-Prediction-System/
-│── data/
-│   └── Disease-Symptom-Prediction.csv
-│
-│── models/
-│   ├── fasttext.model
-│   ├── label_encoder.pkl
-│   ├── tfidf_vectorizer.pkl
-│   ├── model.pth
-│   └── training_history.pkl
-│
-│── notebooks/
-│   └── YourTrainingNotebook.ipynb
-│
-│── demo/
-│   ├── interface-demo.mp4
-│   └── screenshots
-│
-│── src/
-│   ├── preprocessing.py
-│   ├── train_model.py
-│   └── predict.py
-│
-│── metrics.json  
-│── README.md  
-│── LICENSE  
-└── requirements.txt  
+🩺 Disease Prediction System (NLP + Machine Learning)
 
-🛠 Technologies & Libraries Used
-Python
-PyTorch
-TensorFlow / Keras
-Transformers (BioBERT)
-Gensim (Word2Vec, FastText)
-Scikit-learn
-Pandas, NumPy
-Matplotlib, Seaborn
-NLTK
-Tkinter (GUI)
+This repository contains a semester project focused on predicting diseases from textual symptom descriptions using NLP, classical preprocessing, and multiple embedding-based machine learning models.
+The system also includes a fully functional GUI interface for real-time symptom input and disease prediction.
 
-⚙️ Project Workflow
-1️⃣ Data Preprocessing
-Cleaned disease & symptom text
-Removed NaN, duplicates, and extra spaces
-Combined multi-symptom fields
-Normalized and standardized text
+📘 Project Overview
+🎯 Objective
 
-2️⃣ Feature Engineering
-Label encoding
-Train/validation splitting
-Symptom extraction
+Build an intelligent system that predicts the most probable disease based on user-entered symptoms, using machine learning and biomedical language models.
 
-3️⃣ Text Vectorization
-We experimented with multiple embedding methods:
-Embedding Model	Description
-BioBERT	Domain-specific biomedical transformer
-Word2Vec	Semantic vector embedding
-FastText	Sub-word aware embedding
-GloVe	Global co-occurrence embedding
-TF-IDF	Classical but effective for sparse text
-🤖 Model Training
+🧩 Approach
 
-Multiple models were trained and compared:
+The project pipeline integrates:
+
+Robust data preprocessing
+
+Text normalization & cleaning
+
+Feature engineering
+
+Vectorization using:
+
+BioBERT embeddings
+
+Word2Vec
+
+FastText
+
+GloVe
+
+TF-IDF
+
+Multiple trained ML models including:
+
+Neural Networks
+
+Hybrid embeddings + dense layers
+
+The final system is deployed with an intuitive graphical interface to demonstrate real-time disease prediction.
+
+🧠 Models & Embeddings Implemented
+BioBERT-based Embeddings
+
+Domain-specific biomedical language model.
+
+Highly effective for capturing medical terminology.
+
+Used as a powerful baseline for comparison.
+
+Word2Vec
+
+Semantic word embedding.
+
+Captures contextual relationships between symptoms.
+
+FastText
+
+Subword-aware embedding.
+
+Performs well with rare or misspelled symptoms.
+
+GloVe
+
+Global co-occurrence approach.
+
+Lightweight and effective for structured symptom text.
+
 Neural Network Classifier
-BioBERT + Dense Classifier
-FastText + Classifier
-GloVe + Classifier
-Simple Neural Network Baseline
-Training curves were logged and stored for analysis:
-Loss over epochs
-Accuracy over epochs
 
-📊 Results
-Across all embedding types, our models showed:
-Rapid convergence
-High training and validation accuracy
-Smooth loss decay
-Validation accuracy consistently reached:
-⭐ 98% – 100% Accuracy
-🖥 Graphical User Interface (GUI)
+Used as a general baseline.
 
-A user-friendly interface allows users to:
-Enter symptoms
+Fully included in the repository.
 
-Process and vectorize text
-Run prediction in real time
-Display the predicted disease
+✨ Features
 
-📝 Dataset
+Predict diseases directly from raw symptom input.
 
-The dataset contains:
+Multiple vectorization strategies for experimentation.
 
-Disease name
+Training metrics & model performance tracking.
 
-Corresponding symptoms
+A clean, functional GUI interface for real-time predictions.
 
-Cleaned + processed version used for training
+Fully reproducible machine learning pipeline.
+
+Organized repository with executable code and demo video.
+
+📁 Repository Contents
+File / Folder	Description
+notebooks/*.ipynb	Data preprocessing, vectorization, training, and analysis notebooks.
+models/	Trained models, encoders, vectorizers, and training history.
+data/	Dataset used for training (cleaned & raw versions).
+src/	Source code for preprocessing, training, and GUI prediction scripts.
+demo/	Screen recordings and screenshots of the working interface.
+metrics.json	Stored accuracy, loss, and performance metrics for models.
+requirements.txt	Python dependencies required for the project.
+🚀 Usage
+1. Clone the repository
+git clone https://github.com/ZohaibShafiq3742/Disease-Prediction-System.git
+cd Disease-Prediction-System
+
+2. Install dependencies
+pip install -r requirements.txt
+
+3. Run the GUI for disease prediction
+python src/predict.py
+
+4. Run training or preprocessing
+
+Use the available Jupyter notebooks in the notebooks/ directory.
+
+📊 Result Highlights
+
+Validation accuracy achieved: 98% – 100% across different embedding models.
+
+BioBERT-based approaches showed fast convergence and stable performance.
+
+Consistent reduction of loss across training epochs.
+
+All results and curves are stored and visualized in notebooks.
 
 🙌 Acknowledgements
 
-Special thanks to:
+A special thank you to:
 
-Dr. Tanzila Kehkashan — For continuous mentorship
+Dr. Tanzila Kehkashan — For insightful mentorship throughout the project.
 
-Imran Ashraf (Senior) — For consistent guidance & support
+Imran Ashraf (Senior) — For continuous technical guidance and support.
+
+📄 License
+
+This project is released under the MIT License.
 
 📬 Contact
 
 Zohaib Shafiq
-🔗 GitHub: github.com/ZohaibShafiq3742
+🔗 GitHub: https://github.com/ZohaibShafiq3742
+
 🔗 LinkedIn: https://www.linkedin.com/in/zohaib-shafiq-33547238a/
-
-📄 License
-
-This project is licensed under the MIT License.
